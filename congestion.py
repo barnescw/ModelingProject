@@ -32,7 +32,6 @@ class BuildingAgent(Agent):
 
 class CampusModel(Model):
     def __init__(self, N, width, height):
-        super().__init__(N, width, height)
         self.num_agents = N
         self.grid = ContinuousSpace(width, height, False)
         self.schedule = SimultaneousActivation(self)

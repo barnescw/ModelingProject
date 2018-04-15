@@ -1,4 +1,4 @@
-import numpy as np
+'''import numpy as np
 import matplotlib.pyplot as plt
 import time
 
@@ -24,3 +24,8 @@ plt.show()
 for i in range(minutes):
     model.step()
     time.sleep(10)
+'''
+
+from server import server
+server.port = 8521 # The default
+server.launch()
